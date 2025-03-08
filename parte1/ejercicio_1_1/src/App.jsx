@@ -1,3 +1,13 @@
+const Content = (props) => {
+  console.log(props);
+  return (
+    <div>
+      {/* Los props los defino en el componente y los enviaré desde app */}
+      <p>Hello world {props.name}, you are {props.age} years old</p>
+    </div>
+  )
+}
+
 const App = () => {
   const course = 'Half Stack application development'
   const part1 = 'Fundamentals of React'
